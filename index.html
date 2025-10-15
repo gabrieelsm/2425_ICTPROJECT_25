@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Jaradafa - Menu</title>
+    <style>
+        .container {
+            width: 67%;
+            border-radius: 10px;
+            background: #6E2519;
+            box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+            margin: auto;
+            padding: 20px;
+            box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+            color: white;
+        }
+
+        .menu-card{
+            border-radius: 20px;
+            margin: auto;
+            box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+            padding: 20px;
+            background: #FFFFFF;
+            margin-bottom: 20px;
+        }
+
+        .header{
+            padding: 15px;
+            text-align: center;
+            background: linear-gradient(to right, #6E2519, #a26b6b);
+            border-radius: 20px;
+            width: 67%;
+            margin: auto;
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        .opening-hours{
+            text-align: center;
+        }
+
+        .order-btn{
+            display: inline-block;
+            background-color: #c96464;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+
+        #orderType {
+             text-align: center;
+             margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header"
+            <i class="fas fa-utensils restaurant-icon"></i>
+            <div id="name1" class="display-4 fw-bold"></div>
+            <div id="owner" class="fs-5 mt-2"></div>
+            <div id="since" class="fs-6"></div>
+     </div>
+
+    <div class="container">
+        <div class="menu-card">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th id="heading1" colspan="2"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Product Name</td>
+                        <td>Price (₱)</td>
+                    </tr>
+                    <tr>
+                        <td id="prod1"></td>
+                        <td id="price1" class="price"></td>
+                    </tr>
+                    <tr>
+                        <td id="prod2"></td>
+                        <td id="price2" class="price"></td>
+                    </tr>
+                    <tr>
+                        <td id="prod3"></td>
+                        <td id="price3" class="price"></td>
+                    </tr>
+                    <tr>
+                        <td id="prod4"></td>
+                        <td id="price4" class="price"></td>
+                    </tr>
+                    <tr>
+                        <td id="prod5"></td>
+                        <td id="price5" class="price"></td>
+                    </tr>
+                        <tr>
+                        <td id="prod6"></td>
+                        <td id="price6" class="price"></td>
+                    </tr>
+                        <tr>
+                        <td id="prod7"></td>
+                        <td id="price7" class="price"></td>
+                    </tr>
+                        <tr>
+                        <td id="prod8"></td>
+                        <td id="price8" class="price"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="opening-hours">
+            <i class="fas fa-clock me-2"></i>
+            <span id="openingHours"></span>
+        </div>
+
+        <div id="orderType">
+        <a href="ordering_form.html" class="order-btn">Dine-in Available</a>
+        </div>
+
+        <div id="orderType">
+        <a href="contact_information.html" class="order-btn">Send a message?</a>
+        </div>
+        
+        <div class="text-center mt-4">
+            <span id="orderType" class="badge bg-primary"></span>
+        </div>
+    </div>
+    
+    <script type="py" src="main.py"></script>
+</body>
+</html>
